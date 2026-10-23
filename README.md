@@ -1,23 +1,53 @@
 # Beginner Python Programs
 
-## About the Project
+## Project Overview
 
-This repository contains three Python programs created for learning and practicing basic Python programming concepts.
+This repository contains three Python programs that demonstrate basic Python programming concepts, including factorial calculation, Fibonacci series generation, and converting structured objects into dictionaries.
 
-- **`factorial.py`** — A program related to calculating the factorial of a number.
-- **`fibonacci.py`** — A program related to generating Fibonacci numbers.
-- **`structure_to_dict.py`** — A program related to converting a structure into a dictionary.
+The programs are intended for beginners who want to practice functions, loops, recursion, classes, and dictionary operations.
+
+## Programs Description
+
+### 1. `factorial.py`
+
+This program calculates the factorial of a non-negative integer using two approaches:
+
+- **Iterative approach:** Uses a `for` loop to calculate the factorial.
+- **Recursive approach:** Uses a function that calls itself to calculate the factorial.
+
+Both functions raise a `ValueError` for negative numbers. The main program accepts an integer from the user, displays the results from both approaches, and handles `ValueError` exceptions.
+
+### 2. `fibonacci.py`
+
+This program works with Fibonacci numbers using two functions:
+
+- **`fibonacci_series(n)`**: Returns a list containing the first `n` Fibonacci numbers. If `n` is zero or negative, it returns an empty list.
+- **`nth_fibonacci(n)`**: Returns the Fibonacci number at the specified zero-based index. It raises a `ValueError` for negative indices.
+
+The main program asks the user for the number of terms, displays the series, and displays the last requested term when the input is positive. It handles `ValueError` exceptions.
+
+### 3. `structure_to_dict.py`
+
+This program demonstrates four ways to convert structured data into dictionaries:
+
+- **Dataclass conversion:** Uses `dataclasses.asdict()` to convert a `Student` dataclass object into a dictionary.
+- **Object conversion:** Uses `vars()` to obtain the instance attributes of a regular `Book` class object as a dictionary.
+- **Key-value pair conversion:** Uses `dict()` to convert a list of key-value tuples into a dictionary.
+- **Student record conversion:** Converts a list of `Student` objects into a dictionary keyed by each student's roll number. Each value contains the student's name, branch, and marks.
+
+The main program creates example objects and records, then prints the resulting dictionaries.
 
 ## Requirements
 
-- Python 3 installed on your computer.
-- A code editor or terminal to run the programs.
+- Python 3
+- No third-party packages are required by the provided code.
+- The `dataclasses` module is imported by `structure_to_dict.py` and is part of the Python standard library.
 
 ## How to Run
 
-1. Download or clone this repository to your computer.
-2. Open a terminal or command prompt in the project folder.
-3. Run the desired Python file using Python 3.
+Save all three Python files in the same directory as this `README.md`.
+
+Open a terminal or command prompt in that directory and run the desired program.
 
 ### Run the factorial program
 
@@ -37,16 +67,21 @@ python fibonacci.py
 python structure_to_dict.py
 ```
 
-If your system uses `python3` instead of `python`, replace `python` with `python3` in the commands above.
+If your system uses `python3` as the command, replace `python` with `python3`.
 
 ## Learning Objectives
 
-The objectives of this repository are to:
+Through these programs, beginners can practice:
 
-- Practice writing and running Python programs.
-- Understand basic programming concepts through small programs.
-- Learn how to organize and maintain Python files in a GitHub repository.
-- Practice writing project documentation using a README file.
+- Writing and calling Python functions.
+- Using `for` loops and conditional statements.
+- Understanding iterative and recursive approaches.
+- Working with lists and dictionaries.
+- Defining classes and creating objects.
+- Using Python dataclasses.
+- Converting objects and key-value pairs into dictionaries.
+- Handling invalid input and `ValueError` exceptions.
+- Organizing Python programs in a GitHub repository.
 
 ## Repository Structure
 
@@ -60,4 +95,4 @@ The objectives of this repository are to:
 
 ## Conclusion
 
-This repository provides a starting point for practicing Python programming and learning how to document and manage code using GitHub.
+This repository demonstrates basic Python programming techniques through three small programs. It provides practice with mathematical calculations, sequence generation, object-oriented programming, dictionary conversion, and exception handling.
